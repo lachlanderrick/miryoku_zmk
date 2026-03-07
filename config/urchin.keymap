@@ -2,7 +2,7 @@
 // https://github.com/manna-harbour/miryoku
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 5
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 2
 
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/34/ferris.h"
