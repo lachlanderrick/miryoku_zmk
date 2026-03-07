@@ -5,6 +5,10 @@
 #include "../miryoku/mapping/34/ferris.h"
 #include "../miryoku/miryoku.dtsi"
 
+nice_view_spi: &spi0 {
+    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
