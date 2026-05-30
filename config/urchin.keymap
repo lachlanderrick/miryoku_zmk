@@ -8,8 +8,6 @@
 #include "../miryoku/mapping/34/ferris.h"
 #include "../miryoku/miryoku.dtsi"
 
-#define GAME 8
-
 &mmv {
     time-to-max-speed-ms = <300>;
     acceleration-exponent = <1>;
@@ -20,19 +18,19 @@
     acceleration-exponent = <0>;
 };
 
-&keymap {
-    game_layer {
-        display-name = "GAME";
-        bindings = <
-            &kp TAB   &kp Q    &kp W    &kp E    &kp R         &none &none &none &none &none
-            &kp LSHFT &kp A    &kp S    &kp D    &kp F         &none &none &none &none &none
-            &kp LCTRL &kp Z    &kp X    &kp C    &kp V         &none &none &none &none &none
-                               &kp ESC  &kp SPC                &none &none
-        >;
-    };
-};
-
 / {
+    keymap {
+        game_layer {
+            display-name = "GAME";
+            bindings = <
+                &kp TAB   &kp Q    &kp W    &kp E    &kp R         &none &none &none &none &none
+                &kp LSHFT &kp A    &kp S    &kp D    &kp F         &none &none &none &none &none
+                &kp LCTRL &kp Z    &kp X    &kp C    &kp V         &none &none &none &none &none
+                                   &kp ESC  &kp SPC                &none &none
+            >;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_tab {
@@ -44,7 +42,7 @@
         combo_game_toggle {
             timeout-ms = <80>;
             key-positions = <20 24 33 34>;
-            bindings = <&tog GAME>;
+            bindings = <&tog 8>;
         };
     };
 };
