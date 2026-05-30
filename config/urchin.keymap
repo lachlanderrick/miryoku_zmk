@@ -50,7 +50,7 @@
 
         combo_game_esc {
             timeout-ms = <80>;
-            key-positions = <33 34>;
+            key-positions = <30 31>;
             bindings = <&kp ESC>;
             layers = <10>;
         };
