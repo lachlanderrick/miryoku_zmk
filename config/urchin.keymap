@@ -3,6 +3,7 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 1
+#define GAME 10
 
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/34/ferris.h"
@@ -40,9 +41,10 @@
         };
 
         combo_game_toggle {
-            timeout-ms = <80>;
-            key-positions = <20 24 33 34>;
-            bindings = <&tog 8>;
+            timeout-ms = <120>;
+            key-positions = <10 11 12 30>;
+            bindings = <&tog GAME>;
+            layers = <0 10>;
         };
     };
 };
