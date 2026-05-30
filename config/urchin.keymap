@@ -27,7 +27,7 @@
                 &kp TAB   &kp Q    &kp W    &kp E    &kp R         &none &none &none &none &none
                 &kp LSHFT &kp A    &kp S    &kp D    &kp F         &none &none &none &none &none
                 &kp LCTRL &kp Z    &kp X    &kp C    &kp V         &none &none &none &none &none
-                                   &kp RET  &kp SPC                &none &none
+                                   &kp SPC  &kp RET                &none &none
             >;
         };
     };
