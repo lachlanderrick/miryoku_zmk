@@ -27,7 +27,7 @@
                 &kp TAB   &kp Q    &kp W    &kp E    &kp R         &none &none &none &none &none
                 &kp LSHFT &kp A    &kp S    &kp D    &kp F         &none &none &none &none &none
                 &kp LCTRL &kp Z    &kp X    &kp C    &kp V         &none &none &none &none &none
-                                   &kp ESC  &kp SPC                &none &none
+                                   &kp RET  &kp SPC                &none &none
             >;
         };
     };
@@ -38,6 +38,7 @@
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
+            layers = <0 1 2 3 4 5 6 7 8 9>;
         };
 
         combo_game_toggle {
@@ -45,6 +46,13 @@
             key-positions = <10 11 12 30>;
             bindings = <&tog GAME>;
             layers = <0 10>;
+        };
+
+        combo_game_esc {
+            timeout-ms = <80>;
+            key-positions = <33 34>;
+            bindings = <&kp ESC>;
+            layers = <10>;
         };
     };
 };
